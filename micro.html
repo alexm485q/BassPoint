@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Микрофоны - BassPoint</title>
+    <link rel="stylesheet" href="stlmgzn.css">
+</head>
+<body>
+    
+    <video autoplay muted loop class="bckgrndvideo">
+        <source src="backgrnd.MOV">
+    </video>
+
+    <header>
+        <h1>BassPoint</h1>
+    </header>
+
+	<nav>
+		<input type="checkbox" id="side-checkbox" />
+		<div class="side-panel">
+			<label class="side-button-2" for="side-checkbox">+</label>    
+			<div class="side-title">Навигация</div>
+			<p><a class="chngtxt" href="mgzn.html#glstr">Главная страница</a></p>
+			<p><a class="chngtxt" href="mgzn.html#tovar">Товары</a></p>
+			<p><a class="chngtxt" href="mgzn.html#svyaz">Наши контакты</a></p>
+			<p><a class="chngtxt" href="reg.html">Выйти</a></p>
+		</div>
+		<div class="side-button-1-wr">
+			<label class="side-button-1" for="side-checkbox">
+				<div class="side-b side-open"></div>
+				<div class="side-b side-close"></div>
+			</label>
+		</div>
+	</nav>
+
+
+    <div class="container animate">
+        <br>
+        <br>
+        <hr color="#555" size="2">
+        <div class="products animate">
+            <div class="product-card animate">
+                <img src="https://www.muztorg.ru/files/cyx/6lz/39r/w0s/0wk/4ow/8s0/o0o/w/cyx6lz39rw0s0wk4ow8s0o0ow.JPG" alt="Товар 1">
+                <h3>СОЮЗ MALFA</h3>
+                <ul>
+                    <li>Конденсаторный микрофон</li>
+                    <li>Частотный диапазон - 30Гц/18кГЦ</li>
+                    <li>Чувствительность - 25 мВ/Па</li>
+                    <li>Насыщенные низы, отчетливая середина и мягкий верх</li>
+                    <li>Предельный уровень SPL - 140 дБ</li>
+                    <li>Кастомный трансформатор добавляет окрас и глубину звука</li>
+                </ul>
+                <p class="price">₽ 126990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+
+            <div class="product-card animate">
+                <img src="https://www.muztorg.ru/files/c4x/d77/mnl/mgw/sss/wkw/wgs/c4o/4/c4xd77mnlmgwssswkwwgsc4o4.jpg" alt="Товар 2">
+                <h3>AKG P420</h3>
+                <ul>
+                    <li>Back-to-back преобразователь с большой диафрагмой и несколькими характеристиками направленности</li>
+                    <li>Высокая чувствительность и максимальное звуковое давление 155 dB SPL</li>
+                    <li>Переключаемый 20 дБ постоянный преаттенюатор</li>
+                    <li>Легендарное качество звука AKG</li>
+                </ul>
+                <p class="price">₽ 42990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+
+            <div class="product-card animate">
+                <img src="https://www.muztorg.ru/files/cml/lce/cmu/cgg/000/k08/4gs/40s/o/cmllcecmucgg000k084gs40so.jpeg" alt="Товар 3">
+                <h3>LEWITT LCT441FLEX</h3>
+                <ul>
+                    <li>Чистое студийное качество звука</li>
+                    <li>Высококачественные спецификации</li>
+                    <li>Прочный корпус из литого цинка</li>
+                    <li>Максимальное звуковое давление 144 дБ</li>
+                    <li>8 диаграмм направленности</li>
+                    <li>Диаметр мембраны – 25.4 мм</li>
+                </ul>
+                <p class="price">₽ 40990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+        </div>
+    </div>
+    <button class="btnback" onclick="document.location='mgzn.html#tovar'">Назад</button>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 BassPoint. Все права защищены.</p>
+    </footer>
+
+<script src="animate.js"></script>
+
+</body>
+</html>

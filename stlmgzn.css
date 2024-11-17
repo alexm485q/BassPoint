@@ -1,0 +1,451 @@
+﻿html {
+    height: 100%; /* Обеспечивает 100% высоту для всего документа */
+	scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+	height: 100%; 
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bckgrndvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+header {
+	position: center;
+	top: 0px;
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    padding: 5px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.container {
+    flex: 1;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #ffffffd0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Плавный переход */
+}
+
+.product-card:hover {
+    background-color: #808080;
+    transition: all 280ms ease-in-out;
+    transform: scale(1.05); /* Увеличивает размер блока на 5% */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e74c3c;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333ee;
+    color: white;
+    margin-top: auto;
+}
+
+#side-checkbox {
+    display: none;
+}
+.side-panel {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: -360px;
+    background: #555555c9;
+    transition: all 0.5s;   
+    width: 320px;
+    height: 100vh;
+    box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+    color: #FFF;
+    padding: 40px 20px;
+}
+.side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3d3d3d;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+    text-align: left; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+.side-button-1 {
+    display: inline-block;
+}
+.side-button-1 .side-b {
+    margin: 5px;
+    width: 10px;
+    height: 40px;
+    position: relative;
+    padding: 8px 23px;
+    background-image: url('navigation.PNG');
+    background-size: cover;
+    cursor: pointer; 
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+    color: #FFF;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+    background: rgb(0, 0, 0);
+}
+.side-button-1 .side-close:after,
+.side-button-1 .side-close:before {
+    background: rgb(255, 255, 255);
+}
+.side-button-1 .side-b:before {
+    top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox:checked + .side-panel {
+    left: 0;
+}
+/* Оформление кнопки на панеле */
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #BFE2FF;    
+    transition: all 280ms ease-in-out;
+}
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);    
+    color: #FFF;
+}
+
+.chngtxt:hover {
+    color:#fff890ee
+}
+
+.chngtxt2 {
+    color: white;
+    font-size: 14;
+}
+
+li {
+    margin-left: 0;
+    text-align: left;
+}
+
+.btnback {
+	padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnback:hover {
+	background-color: #555;
+    transition: all 400ms ease-in-out;
+}
+
+.oblast {
+    background-color: #000000d0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 2000px;
+}
+
+.registr {
+    max-width: 320px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.input {
+    display: block;
+    width: 95%;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.btnreg {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    padding: 8px 10px;
+    border: 0;
+    background-color: rgb(41, 41, 41);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+}
+.btnreg:hover {
+    background-color: white;
+    color:black;
+    transition: all 400ms ease-in-out;
+}
+
+/* Начальные стили для элементов с анимацией */
+.animate {
+    opacity: 0; /* Начинают как невидимые */
+    transform: translateY(30px); /* С легким смещением вниз */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Видимые элементы */
+.show {
+    opacity: 1;
+    transform: translateY(0); /* Плавное появление в исходном положении */
+}
+
+.helper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Скрываем по умолчанию */
+    z-index: 1000;
+}
+
+/* Заголовок окна */
+.helper-header {
+    background-color: #707070;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Сообщение внутри окна */
+.helper-message {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.close-btn:hover {
+    background-color: #ca2121d0;
+    transition: all 400ms ease-in-out;
+}
+
+/* Анимация появления */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Контейнер для ввода сообщений */
+.helper-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+/* Поле ввода */
+.helper-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* Кнопка отправки */
+.helper-input button {
+    padding: 8px 12px;
+    background-color: #7e7e7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.helper-input button:hover {
+    background-color: #383838;
+}
+
+/* Сообщения в окне */
+.user-message {
+    background-color: #ff202080;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 14px;
+    color: #000000;
+}
+
+.olga-message {
+    background-color: #ff9e9e80;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #000000;
+}

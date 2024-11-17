@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - BassPoint</title>
+    <link rel="stylesheet" href="stlmgzn.css">
+</head>
+<body>
+
+<video autoplay muted loop class="bckgrndvideo">
+    <source src="backgrnd.MOV">
+</video>
+
+<header>
+    <h1>BassPoint</h1>
+</header>
+
+<div class="container animate">
+    <div class="oblast animate">
+        <h2 class="chngtxt2 animate"><center>Регистрация</center></h2>
+        <hr color="#555" size="2">
+        <form class="registr" method="POST" action="register.php">
+            <input class="input" type="text" name="username" placeholder="Логин" required>
+            <input class="input" type="password" name="password" placeholder="Пароль" required>
+            <input class="input" type="password" name="confirm_password" placeholder="Повторите пароль" required>
+            <h5><center>Есть аккаунт? <a class="chngtxt" style="text-decoration: none;" href="reg.html">Войти</a></center></h5>
+        </form>
+		<button class="btnreg" type="submit" onclick="document.location='reg.html'">Зарегистрироваться</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 BassPoint. Все права защищены.</p>
+</footer>
+
+<script src="animate.js"></script>
+
+</body>

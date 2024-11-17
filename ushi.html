@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наушники - BassPoint</title>
+    <link rel="stylesheet" href="stlmgzn.css">
+</head>
+<body>
+    
+    <video autoplay muted loop class="bckgrndvideo">
+        <source src="backgrnd.MOV">
+    </video>
+
+    <header>
+        <h1>BassPoint</h1>
+    </header>
+
+	<nav>
+		<input type="checkbox" id="side-checkbox" />
+		<div class="side-panel">
+			<label class="side-button-2" for="side-checkbox">+</label>    
+			<div class="side-title">Навигация</div>
+			<p><a class="chngtxt" href="mgzn.html#glstr">Главная страница</a></p>
+			<p><a class="chngtxt" href="mgzn.html#tovar">Товары</a></p>
+			<p><a class="chngtxt" href="mgzn.html#svyaz">Наши контакты</a></p>
+			<p><a class="chngtxt" href="reg.html">Выйти</a></p>
+		</div>
+		<div class="side-button-1-wr">
+			<label class="side-button-1" for="side-checkbox">
+				<div class="side-b side-open"></div>
+				<div class="side-b side-close"></div>
+			</label>
+		</div>
+	</nav>
+
+    <div class="container animate">
+        <br>
+        <br>
+        <hr color="#555" size="2">
+        <div class="products animate">
+            <div class="product-card animate">
+                <img src="https://cdn1.ozone.ru/s3/multimedia-y/6424607110.jpg" alt="Товар 1">
+                <h3>Beyerdynamic DT 990 PRO</h3>
+                <p>Предназначены в первую очередь для профессионального студийного применения, но так же хорошо подходят и для аудиофильских систем. Наушники открытые, без шумоизоляции, позволяющие получить великолепный объемный звук. При этом за счет отсутствия звукоизоляции слышно, что происходит вокруг. Прекрасное воспроизведение практически любого музыкального материала, отличная атака и невероятный объем басов. Высокий комфорт достигается за счет широкой дужки с мягкими велюровыми амбушюрами.</p>
+                <p class="price">₽ 19990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+
+            <div class="product-card animate">
+                <img src="https://cdn1.ozone.ru/s3/multimedia-1-q/6959665070.jpg" alt="Товар 2">
+                <h3>AKG K240 Studio</h3>
+                <p>Представляет собой усовершенствованную версию классической модели AKG K240 Monitor. Благодаря новой мембране XXL, звучание наушников очень ровное и мелодичное. Конструкция наушников AKG K240 Studio проверенна временем и также заслуживает отдельных похвал. Даже через продолжительное время работы, нет ощущения усталости и дискомфорта. Отличное воспроизведение высоких, средних и низких частот. Конструкция: полуоткрытые, динамические наушники, circumaural. Частотный диапазон: 15-25.000 Гц.</p>
+                <p class="price">₽ 12990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+
+            <div class="product-card animate">
+                <img src="https://www.bigtv.ru/storage/goodsImages/86/86929/clear_86929_1.jpg" alt="Товар 3">
+                <h3>Audio-Technica ATH-M20x</h3>
+                <p>Мониторные наушники закрытого типа, с кабелем длиной 3 метра, предназначенные не только для любителей, но и для профессионалов, например, начинающих музыкантов. Аксессуар относится к классу Pro, и обеспечивает отличное качество звучания в диапазоне от 15 до 20 000 Гц, без каких либо искажений. Дополняет картину равномерный частотный баланс, чёткая детализация и прекрасное разделение инструментов. Наушники отлично сидят на голове, они полностью прикрывают уши, надёжно изолируя пользователя от посторонних шумов.</p>
+                <p class="price">₽ 7990</p>
+                <button onclick="document.location='mgzn.html'">Купить</button>
+            </div>
+        </div>
+    </div>
+    <button class="btnback" onclick="document.location='mgzn.html#tovar'">Назад</button>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 BassPoint. Все права защищены.</p>
+    </footer>
+
+<script src="animate.js"></script>
+
+</body>
+</html>
