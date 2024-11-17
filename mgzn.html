@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BassPoint</title>
+    <link rel="stylesheet" href="stlmgzn.css">
+</head>
+<body>
+
+<video autoplay muted loop class="bckgrndvideo">
+    <source src="backgrnd.MOV">
+</video>
+
+<header>
+    <h1>BassPoint</h1>
+</header>
+
+<div class="helper animate" id="helper">
+    <div class="helper-header">Ольга</div>
+    <button class="close-btn" id="close-helper">×</button>
+    <div class="helper-message" id="helper-message">
+        Здравствуйте, чем я могу вам помочь?
+    </div>
+    <div class="helper-input">
+        <input type="text" id="user-input" placeholder="Введите сообщение..." />
+        <button id="send-message">Отправить</button>
+    </div>
+</div>
+
+<script src="operator.js"></script>
+<nav>
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+        <label class="side-button-2" for="side-checkbox">+</label>    
+        <div class="side-title">Навигация</div>
+        <p><a class="chngtxt" href="#glstr">Главная страница</a></p>
+        <p><a class="chngtxt" href="#tovar">Товары</a></p>
+        <p><a class="chngtxt" href="#svyaz">Наши контакты</a></p>
+        <p><a class="chngtxt" href="reg.html">Выйти</a></p>
+    </div>
+    <div class="side-button-1-wr">
+        <label class="side-button-1" for="side-checkbox">
+            <div class="side-b side-open"></div>
+            <div class="side-b side-close"></div>
+        </label>
+    </div>
+</nav>
+
+<div class="container animate">
+    <h2 id="glstr" class="chngtxt2 animate"><center>Главная страница</center></h2>
+    <hr color="#555" size="2">
+    <br>
+    <div class="oblast animate">
+        <h2 class="chngtxt2 animate">BassPoint — ведущий онлайн-магазин, специализирующийся на продаже профессионального студийного оборудования для звукозаписи, микширования и мастеринга.</h2>
+        <hr color="#555" size="2">
+        <h1 class="chngtxt2 animate"><center>Что мы предлагаем</center></h1>
+        <hr color="#555" size="2">
+        <ul class="animate">
+            <li class="chngtxt2">Микрофоны и микрофонные аксессуары.</li>
+            <li class="chngtxt2">Студийные мониторы и наушники.</li>
+            <li class="chngtxt2">Студийное ПО — цифровые аудио рабочие станции и плагины для обработки звука.</li>
+        </ul>
+        <hr color="#555" size="2">
+        <h1 class="chngtxt2 animate"><center>Наши преимущества</center></h1>
+        <hr color="#555" size="2">
+        <ol class="animate">
+            <li class="chngtxt2">Гарантия качества</li>
+            <li class="chngtxt2">Широкий ассортимент</li>
+            <li class="chngtxt2">Консультации профессионалов</li>
+            <li class="chngtxt2">Доставка по всей России</li>
+        </ol>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container animate">
+    <h2 id="tovar" class="chngtxt2 animate"><center>Товары</center></h2>
+    <hr color="#555" size="2">
+    <div class="products animate">
+        <div class="product-card animate">
+            <img src="https://muzcentre.ru/image/magictoolbox_cache/feabb61ae2a71c1844359f7cbe8b5d82/5/9/59182_product/original/3236342388/sE%20Electronics%20X1%20S%20STUDIO%20BUNDLE.jpg" alt="Товар 1">
+            <h3>Микрофоны</h3>
+            <button onclick="document.location='micro.html'">Перейти</button>
+        </div>
+
+        <div class="product-card animate">
+            <img src="https://vismedia.ru/upload/iblock/d34/d342e25af8f6397333b71983a4157211.jpg" alt="Товар 1">
+            <h3>Наушники</h3>
+            <button onclick="document.location='ushi.html'">Перейти</button>
+        </div>
+
+        <div class="product-card animate">
+            <img src="https://cdn.head-fi.org/a/6371410.jpg" alt="Товар 1">
+            <h3>Колонки</h3>
+            <button onclick="document.location='kolonki.html'">Перейти</button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container animate">
+        <h2 id="svyaz" class="chngtxt2 animate"><center>Наши контакты</center></h2>
+        <hr color="#555" size="2">
+        <br>
+        <div class="oblast animate">
+            <table>
+                <td>
+                    <ul>
+                        <li class="chngtxt2 animate">Адрес офиса/склада: г. Москва, ул. Пушкина, д. 123, офис 45</li>
+                        <li class="chngtxt2 animate">Телефон для связи: +7 (495) 123-45-67</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li class="chngtxt2 animate">График работы: Понедельник – Пятница: 9:00 – 18:00</li>
+                        <li class="chngtxt2 animate">Электронная почта: support@basspoint.su</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li class="chngtxt2 animate"><a class="chngtxt2" style="text-decoration: none;" href="https://vk.com/" target="_blank">VK</a></li>
+                        <li class="chngtxt2 animate"><a class="chngtxt2" style="text-decoration: none;" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank">Facebook</a></li>
+                    </ul>
+                </td>
+            </table>
+            <br>
+            <br>
+            <h1 class="chngtxt2 animate"><center>Мы всегда готовы ответить на ваши вопросы! Обращайтесь через форму обратной связи на сайте или пишите нам на электронную почту.</center></h1>
+        </div>
+    </div>
+
+<footer>
+    <p>&copy; 2024 BassPoint. Все права защищены.</p>
+</footer>
+
+<script src="animate.js"></script>
+
+</body>
+</html>
